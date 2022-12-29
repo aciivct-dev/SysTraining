@@ -1,0 +1,25 @@
+<form action="asm.jsp" method="post"> 
+            Name <input type="text" name="t1" id="t1"><br>
+            dob<input type="date" name="dob" id="dob">
+                      <input type="submit" value="Register">
+                      gender <br>
+                      Male<input type="radio" value="Male" name="g"> Female<input type="radio" name="g" value="Female">
+                   Education
+                   sslc<input type="checkbox" name="" value="ON" />
+                   +2<input type="checkbox" name="" value="ON" />
+                   UG<input type="checkbox" name="" value="ON" />
+                   pG<input type="checkbox" name="" value="ON" />
+                   
+                   Deptartment
+                   <select name="s">
+                       <option>Software</option>
+                       <option>Networking</option>
+                       <option>Marketing</option>
+                       <option>Admin</option>
+                   </select>
+                   <br>
+                           Address
+                           <textarea rows ="4" cols="20"></textarea>
+                           
+                           password<input type="password" name ="sg" >
+        </form>

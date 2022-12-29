@@ -1,0 +1,333 @@
+Box-shadow CSS
+------------
+It is used to add shadow-like effects around the frame of an element.
+
+blur: As its name implies, it is used to blur the box-shadow. This attribute is optional.
+
+spread: It sets the shadow size. The spread size depends upon the spread value.
+
+color: As its name implies, this attribute is used to set the color of the shadow. It is an optional attribute.
+
+inset: Normally, the shadow generates outside of the box, but by using inset, the shadow can be created within the box.
+
+initial: It is used to set the property of the box-shadow to its default value.
+
+inherit: it is inherited from its parent.
+
+none: It is the default value that does not include any shadow property.
+
+Let's understand the above attributes by using an illustration.
+
+
+col  
+            {  
+v-offset blur spread color */   
+                box-shadow: 5px 10px 10px 10px orange;   
+            }  
+
+ <div id = "col">   
+        <h1>It is a box that includes the color attribute.</h1>  
+     </div>  
+
+
+CSS Text-shadow
+----------------
+As its name implies, this CSS property adds shadows to the text. It accepts the comma-separated list of shadows that applied to the text. It's default property is none. It applies one or more than one text-shadow effect on the element's text content.
+
+text-shadow: h-shadow v-shadow blur-radius color| none | initial | inherit; 
+
+
+h-shadow: It is the required value. It specifies the position of the horizontal shadow and allows negative values.
+
+v-shadow: It is also the required value that specifies the position of the vertical shadow. It does not allow negative values.
+
+blur-radius: It is the blur-radius, which is an optional value. Its default value is 0.
+
+color: It is the color of the shadow and also an optional value.
+
+none: It is the default value, which means no shadow.
+
+initial: It is used to set the property to its default value.
+
+inherit: It simply inherits the property from its parent element.
+
+p.test{  
+        text-shadow: 3px 3px 3px violet;  
+        font-size:30px;  
+        text-align:center;  
+      }  
+
+<body>   
+    <p class="test">   
+    Welcome CSS  
+    </p>   
+
+CSS text-transform
+-----------------
+
+This CSS property allows us to change the case of the text. It is used to control the text capitalization. This CSS property can be used to make the appearance of text in all-lowercase or all-uppercase or can convert the first character of each word to uppercase.
+
+text-transform: capitalize| uppercase | lowercase | none | initial | inherit;  
+
+
+CSS Visibility
+The CSS visibility property is used to specify whether an element is visible or not.
+
+h1.visible {  
+    visibility: visible  
+}  
+h1.hidden {  
+    visibility: hidden  
+}  
+
+CSS Counters
+CSS counters are similar to variables. These are maintained by CSS and those values can be incremented by CSS rules to track how many times they are used.
+
+CSS Counter Properties
+Following is a list of properties that are used with CSS counter:
+
+counter-reset: It is used to create or reset a counter.
+counter-increment: It is used to increment the counter value.
+content: It is used to insert generated content.
+counter() or counters() function: It is used to add the value of a counter to an element.
+
+<style>  
+body {  
+    counter-reset: section;  
+}  
+h2::before {  
+    counter-increment: section;  
+    content: "Section " counter(section) ": ";  
+}  
+</style>  
+</head>  
+<body>  
+  <h1>Counter Exapmle</h1>
+<h2>Java Tutorial</h2>  
+<h2>HTML Tutorial</h2>  
+<h2>CSS Tutorial</h2>  
+<h2>Oracle Tutorial</h2>  
+</body>  
+</html>  
+
+nested counter
+---------------
+<style>  
+ol {  
+    counter-reset: section;  
+    list-style-type: none;  
+}  
+  
+li::before {  
+    counter-increment: section;  
+    content: counters(section,".") " ";  
+}  
+</style>  
+</head>  
+<body>  
+<h2>Different level of Nesting counters</h2>  
+<ol>  
+  <li>item</li>  
+  <li>item  
+    <ol>  
+      <li>item</li>  
+      <li>item</li>  
+      <li>item  
+        <ol>  
+          <li>item</li>  
+          <li>item</li>  
+          <li>item</li>  
+        </ol>  
+      </li>  
+      <li>item</li>  
+    </ol>  
+  </li>  
+  <li>item</li>  
+  <li>item</li>  
+</ol>  
+</body>  
+</html>  
+
+CSS icons
+Icons can be defined as the images or symbols used in any computer interface refer to an element. It is a graphical representation of a file or program that helps the user to identify about the type of file quickly.
+
+Using the icon library is the easiest way to add icons to our HTML page. It is possible to format the library icons by using CSS. We can customize the icons according to their color, shadow, size, etc.
+
+There are given some of the icon libraries such as Bootstrap icons, Font Awesome icons, and Google icons that can be used in CSS easily. There is no need to install or download the libraries mentioned
+
+<head>   
+<title>CSS Icons</title>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>  
+body{  
+text-align:center;  
+background-color:lightblue;  
+}  
+.fa{  
+color:red;  
+font-size:50px;  
+margin:10px;  
+}  
+</style>  
+</head>   
+<body style="text-align:center">   
+<h1>Font Awesome Library</h1>  
+      <i class="fa fa-cloud"></i>   
+      <i class="fa fa-file"></i>   
+      <i class="fa fa-heart"></i>   
+      <i class="fa fa-bars"></i>   
+      <i class="fa fa-car"</i>   
+</body>   
+</html>    
+
+Bootstrap icons
+As similar to the font awesome library, we can add the bootstrap icons in our HTML page using the link given below in the <head></head> section.
+
+<link rel="stylesheet"   
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+
+glyphicon 
+
+Google icons
+As similar to the above libraries, we can add it in our HTML page simply by adding the link given below in the <head></head> section.
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+material-icons
+
+
+CSS justify-content
+This CSS property is used to align the items of the flexible box container when the items do not use all available space on the main-axis (horizontally). It defines how the browser distributes the space around and between the content items.
+
+justify-content: center | flex-start | flex-end | space-around | space-evenly | space-between | initial | inherit;  
+
+
+center: As its name implies, it set the position of items at the center of the container.
+flex-start: It is the default value that positioned the items at the beginning of the container.
+flex-end: It set the position of items at the end of the container.
+space-around: It positioned the items with equal spacing from each other. It evenly distributes the items in the line along with the same space around them.
+space-between: Items are evenly spaced in which the first item is at the beginning, and the last item is at the end.
+space-evenly: It also positioned the items with equal space, but the spacing from the corners differs.
+
+CSS text-decoration
+It is a CSS property that decorates the content of the text. It adds lines under, above, and through the text. It sets the appearance of decorative lines on text. This CSS property decorates the text with several kinds of lines. This is shorthand for text-decoration-line, text-decoration-color, and text-decoration-style.
+
+text-decoration: text-decoration-line text-decoration-color text-decoration-style|initial|inherit;  
+
+text-decoration-line
+It sets the kind of text-decoration like overline, underline, or line-through. It can be used to add a combination of lines to the selected text.
+
+
+text-decoration-style
+This property is used to set the style of the line. Its values are solid, dotted, wavy, double, and dashed.
+
+text-decoration-color
+
+
+CSS Navigation bar
+A Navigation bar or navigation system comes under GUI that helps the visitors in accessing information. It is the UI element on a webpage that includes links for the other sections of the website.
+
+A navigation bar is mostly displayed on the top of the page in the form of a horizontal list of links. It can be placed below the logo or the header, but it should always be placed before the main content of the webpage.
+
+<html>  
+<head>  
+<style>  
+ul {  
+  list-style-type: none;  
+  margin: 0;  
+  padding: 0px;  
+  overflow: hidden;  
+  background-color: lightgray;  
+}  
+  
+li {  
+  float: left;  
+}  
+  
+li a {  
+  display: block;  
+  color: blue;  
+ font-size:20px;  
+  text-align: center;  
+  padding: 10px 20px;  
+  text-decoration: none;  
+}  
+.active{  
+background-color: gray;  
+color: white;  
+}  
+li a:hover {  
+  background-color: orange;  
+  color: white;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<ul>  
+  <li><a class="active" href="#home">Home</a></li>  
+  <li><a href="#">Java</a></li>  
+  <li><a href="#">HTML</a></li>  
+  <li><a href="#">CSS</a></li>  
+</ul>  
+  
+</body>  
+</html>  
+
+CSS Zoom
+This CSS property scales the content. It manages the magnification level of the content. Instead of using this property, we can also use the transform: scale(); property.
+
+The use of this CSS property is not recommended because it is not supported in some browsers. It is a non-standard feature, which is recommended not to use on production sites
+
+
+zoom: normal | number | percentage | reset ;  
+
+normal: It shows the element to its normal size. It defines the normal size of the element. Tt holds the normal content that does not zoom-out or zoom-in. It has the value zoom: 1;
+
+number: It is a positive float value that indicates a zoom factor. Its value smaller than 1.0 represents zoom out (or size reduction), and larger than 1.0 represents zoom in (increase the size). Suppose we specify zoom: 1.5; then, the content will be 1.5 times larger than the original content.
+
+percentage: It defines a value in percentage. Its 100% value is equivalent to normal. It scales the content using the percentage value. Its value greater than 100% represents zoom in, and value less than 100% represents zoom out. Suppose if we define zoom: 175%; then it means that the content will be 175% larger than the original content.
+
+<head>    
+    <title>    
+        CSS zoom   
+    </title>    
+    
+    <style>    
+        h1 {    
+            color: red;           
+        }    
+.magnify{  
+  width: 100px;  
+  height: 100px;  
+  border-radius: 30px;  
+  display: inline-block;  
+  color: white;  
+}  
+#m1 {  
+  background-color: blue;  
+  zoom: normal;  
+}  
+#m2 {  
+  background-color: yellow;  
+  zoom: 200%;  
+  color: black;  
+}  
+#m3 {  
+  background-color: green;  
+  zoom: 2.9;  
+}         
+p{  
+padding-top:20px;  
+}  
+    </style>    
+</head>    
+    
+<body>    
+    <center>             
+        <h1>CSS zoom property</h1>              
+<div id="m1" class="magnify"><p>zoom: normal;<p></div>  
+<div id="m2" class="magnify"><p>zoom: 200%;<p></div>  
+<div id="m3" class="magnify"><p>zoom: 2.9;<p></div>      
+</center>    
+<body>    

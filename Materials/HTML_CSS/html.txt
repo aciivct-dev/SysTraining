@@ -1,0 +1,723 @@
+HTML
+---- 
+ -is the standard markup language for creating Web pages.
+
+html+java-----jsp;
+html+C#.net---asp.net
+html+php------php
+html+python----djnago
+java+html----servlet
+
+What is HTML?
+-------------
+ *   HTML stands for Hyper Text Markup Language
+ *   HTML is the standard markup language for creating Web pages
+ *   HTML describes the structure of a Web page
+ *   HTML consists of a series of elements
+ *   HTML elements tell the browser how to display the content
+ *   HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+ A Simple HTML coding:-
+----------------------
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>html home page</title>
+    </head>
+    <body>
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+
+    </body>
+    </html>
+
+ Explained
+----------
+ *  The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+ *  The <html> element is the root element of an HTML page
+ *  The <head> element contains meta information about the HTML page
+ *  The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+ *  The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs,  *      images, hyperlinks, tables, lists, etc.
+ *  The <h1> element defines a large heading
+ *  The <p> element defines a paragraph
+
+  What is an HTML Element?
+-----------------------------
+    An HTML element is defined by a start tag, some content, and an end tag:
+    ------------------------------------------------------------------------
+   <tagname>Content goes here...</tagname>
+   The HTML element is everything from the start tag to the end tag:
+   <h1>My First Heading</h1>
+   <p>My first paragraph.</p>
+
+   All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+    The <!DOCTYPE> Declaration
+   1) The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+   2) It must only appear once, at the top of the page (before any HTML tags).
+
+   3) The <!DOCTYPE> declaration is not case sensitive.
+
+  The HTML document itself begins with <html> and ends with </html>.
+  The visible part of the HTML document is between <body> and </body>.
+
+
+Start tag     Element content         End tag
+---------     ---------------  	      -------
+<h1>	      My First Heading	        </h1>
+<p>	      My first paragraph.       </p>
+<br>		none			none
+
+Note:
+----- 
+Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag
+
+HTML Headings
+--------------
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+
+Example
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6> 
+
+HTML Links:-
+----------
+HTML links are defined with the <a> tag:
+
+Example
+-------
+   <a href="https://www.java.com">This is a link</a>
+
+  * The link's destination is specified in the href attribute. 
+  * Attributes are used to provide additional information about HTML elements.
+
+HTML Images:-
+-------------
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+
+Example:-
+--------
+   <img src="java.jpg" alt="java.com" width="104" height="142">
+
+HTML Attributes:-
+-----------------
+  *  All HTML elements can have attributes
+  *  Attributes provide additional information about elements
+  *  Attributes are always specified in the start tag
+  *  Attributes usually come in name/value pairs like: name="value"
+
+1)The href Attribute:-
+------------------
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+Example
+<a href="https://www.java.com">Visit java</a>
+You will learn more about links in our HTML Links chapte
+
+
+2)The src Attribute:-
+--------------------
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:
+
+Example
+<img src="renaultkwid.jpg">
+There are two ways to specify the URL in the src attribute:
+
+3)The width and height Attributes:-
+---------------------------------
+The <img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):
+
+Example
+<img src="renaultkwid.jpg" width="500" height="600">
+
+4)The style Attribute:-
+----------------------
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+
+Example
+
+  <!DOCTYPE html>
+  <html>
+  <body>
+ <p style="color:red;">This is a red paragraph.</p>
+ <p>I am normal</p>
+ <p style="color:red;">I am red</p>
+ <p style="color:blue;">I am blue</p>
+ <p style="font-size:50px;">I am big</p>
+
+</body>
+</html>
+
+
+
+5)The title Attribute:-
+----------------------
+The title attribute defines some extra information about an element.
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+Example
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+Chapter Summary:-
+----------------
+ *  All HTML elements can have attributes
+ *  The href attribute of <a> specifies the URL of the page the link goes to
+ *  The src attribute of <img> specifies the path to the image to be displayed
+ *  The width and height attributes of <img> provide size information for images
+ *  The alt attribute of <img> provides an alternate text for an image
+ *  The style attribute is used to add styles to an element, such as color, font, size, and more
+ *  The title attribute defines some extra information about an element
+
+HTML Text Formatting:-
+---------------------
+HTML contains several elements for defining text with a special meaning.
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+1) HTML <b> and <strong> Elements:-
+----------------------------------
+The HTML <b> element defines bold text, without any extra importance.
+
+Example
+<b>This text is bold</b>
+The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.
+
+Example
+<strong>This text is important!</strong>
+
+2) HTML <i> and <em> Elements:-
+-------------------------------
+The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+
+Example
+<i>This text is italic</i>
+ The content inside is typically displayed in italic
+
+3)HTML <small> Element:-
+------------------------
+The HTML <small> element defines smaller text:
+
+Example
+<small>This is some smaller text.</small>
+
+4)HTML <mark> Element:-
+---------------------
+The HTML <mark> element defines text that should be marked or highlighted:
+
+Example
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+5)HTML <del> Element:-
+--------------------
+The HTML <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:
+
+Example
+<p>My favorite color is <del>blue</del> red.</p>
+
+6)HTML <ins> Element:-
+---------------------
+The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:
+
+Example
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+7)HTML <sub> Element:-
+---------------------
+The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:
+
+Example
+<p>This is <sub>subscripted</sub> text.</p>
+
+8)HTML <sup> Element:-
+--------------------
+The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:
+
+Example
+<p>This is <sup>superscripted</sup> text.</p>
+
+HTML Text Formatting Elements:-
+-----------------------------
+Tag             Description
+---		-----------
+* <b>		Defines bold text
+* <em>		Defines emphasized text 
+* <i>		Defines a part of text in an alternate voice or mood
+* <small>	Defines smaller text
+* <strong>	Defines important text
+* <sub>		Defines subscripted text
+* <sup>		Defines superscripted text
+* <ins>		Defines inserted text
+* <del>		Defines deleted text
+* <mark>	Defines marked/highlighted text
+
+HTML Quotation and Citation Elements:-
+-------------------------------------
+1)HTML <q> for Short Quotations:-
+-----------------------------
+The HTML <q> tag defines a short quotation.
+
+Browsers normally insert quotation marks around the quotation.
+
+Example
+<p>jenisten: <q>lawrence</q></p>
+
+2)HTML <abbr> for Abbreviations:-
+--------------------------------
+The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+
+Example
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+3)HTML <address> for Contact Information:-
+-----------------------------------------
+The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+
+Example
+-------
+<address>
+num 6,<br>
+Vivegananther street,<br>
+dubai kurukku santhu,<br>
+dubai main rode,<br>
+dubai,<br>
+phone num:6369937873
+</address>
+
+
+4)HTML <bdo> for Bi-Directional Override:-
+-----------------------------------------
+BDO stands for Bi-Directional Override.
+
+The HTML <bdo> tag is used to override the current text direction:
+
+Example
+<bdo dir="rtl">lawrence</bdo>
+
+HTML Quotation and Citation Elements:-
+--------------------------------------
+Tag             description
+----		-----------
+* <abbr>	Defines an abbreviation or acronym
+* <address>	Defines contact information for the author/owner of a document
+* <bdo>		Defines the text direction
+* <blockquote>	Defines a section that is quoted from another source
+* <cite>	Defines the title of a work
+* <q>		Defines a short inline quotation
+
+Background Color:-
+------------------
+<h1 style="background-color:DodgerBlue;">lawrence</h1>
+<p style="background-color:Tomato;">jenisten</p>
+
+Text Color:-
+------------
+<h1 style="color:Tomato;">lara</h1>
+<p style="color:DodgerBlue;">lawrence</p>
+<p style="color:MediumSeaGreen;">jenisten</p>
+
+Border Color:-
+------------
+<h1 style="border:2px solid Tomato;">lara</h1>
+<h1 style="border:2px solid DodgerBlue;">lawrwence</h1>
+<h1 style="border:2px solid Violet;">jenisten</h1>
+
+HTML Tables:-
+------------
+
+The <table> tag defines an HTML table.
+
+Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. Each table data/cell is defined with a <td> tag.
+
+By default, the text in <th> elements are bold and centered.
+
+By default, the text in <td> elements are regular and left-aligned.
+
+Example:-
+--------
+A simple HTML table:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+
+HTML Table - Add a Border:-
+-------------------------
+To add a border to a table, use the CSS border property:
+
+Example
+--------
+table, th, td {
+  border: 1px solid black;
+}
+Remember to define borders for both the table and the table cells.
+
+HTML Table - Collapsed Borders:-
+------------------------------
+To let the borders collapse into one border, add the CSS border-collapse property:
+
+Example
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+HTML Table - Add Cell Padding:-
+-----------------------------
+Cell padding specifies the space between the cell content and its borders.
+
+If you do not specify a padding, the table cells will be displayed without padding.
+
+To set the padding, use the CSS padding property:
+
+Example
+th, td {
+  padding: 15px;
+}
+
+HTML Table - Left-align Headings:-
+--------------------------------
+By default, table headings are bold and centered.
+
+To left-align the table headings, use the CSS text-align property:
+
+Example
+th {
+  text-align: left;
+}
+
+HTML Table - Add Border Spacing:-
+-------------------------------
+Border spacing specifies the space between the cells.
+
+To set the border spacing for a table, use the CSS border-spacing property:
+
+Example
+table {
+  border-spacing: 5px;
+}
+
+HTML Table - Cell that Spans Many Columns:-
+------------------------------------------
+To make a cell span more than one column, use the colspan attribute:
+
+Example
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+HTML Table - Cell that Spans Many Rows:-
+--------------------------------------
+To make a cell span more than one row, use the rowspan attribute:
+
+Example
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+HTML Table - Add a Caption:-
+--------------------------
+To add a caption to a table, use the <caption> tag:
+
+Example
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+
+Chapter Summary:-
+---------------
+Use the HTML <table> element to define a table
+Use the HTML <tr> element to define a table row
+Use the HTML <td> element to define a table data
+Use the HTML <th> element to define a table heading
+Use the HTML <caption> element to define a table caption
+Use the CSS border property to define a border
+Use the CSS border-collapse property to collapse cell borders
+Use the CSS padding property to add padding to cells
+Use the CSS text-align property to align cell text
+Use the CSS border-spacing property to set the spacing between cells
+Use the colspan attribute to make a cell span many columns
+Use the rowspan attribute to make a cell span many rows
+Use the id attribute to uniquely define one table
+
+
+HTML Table Tags:-
+--------------
+Tag             Description
+---		
+ * <table>	Defines a table
+ * <th>		Defines a header cell in a table
+ * <tr>		Defines a row in a table
+ * <td>		Defines a cell in a table
+ * <caption>	Defines a table caption
+ * <colgroup>	Specifies a group of one or more columns in a table for formatting
+ * <col>	Specifies column properties for each column within a <colgroup> element
+ * <thead>	Groups the header content in a table
+ * <tbody>	Groups the body content in a table
+ * <tfoot>	Groups the footer content in a table
+
+
+What are Emojis:-
+---------------
+Emojis look like images, or icons, but they are not.
+
+They are letters (characters) from the UTF-8 (Unicode) character set.
+
+UTF-8 covers almost all of the characters and symbols in the world.
+
+The HTML charset Attribute:-
+---------------------------
+To display an HTML page correctly, a web browser must know the character set used in the page.
+
+This is specified in the <meta> tag:
+
+<meta charset="UTF-8">
+If not specified, UTF-8 is the default character set in HTML.
+
+UTF-8 Characters
+Many UTF-8 characters cannot be typed on a keyboard, but they can always be displayed using numbers (called entity numbers):
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<p>I will display A B C</p>
+<p>I will display &#65; &#66; &#67;</p>
+
+</body>
+</html>
+
+Emoji Characters:-
+-----------------
+Emojis are also characters from the UTF-8 alphabet:
+
+?? is 128516
+?? is 128525
+?? is 128151
+Example
+-------
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>My First Emoji</h1>
+
+<p>&#128512;</p>
+
+</body>
+</html>
+
+Some Emoji Symbols in UTF-8
+Emoji	Value
+??	&#128507;
+??	&#128508;
+??	&#128509;
+??	&#128510;
+??	&#128511;
+??	&#128512;
+??	&#128513;
+??	&#128514;
+??	&#128515;
+??	&#128516;
+??	&#128517;
+
+HTML Video:-
+-----------
+The HTML <video> Element:-
+------------------------
+To show a video in HTML, use the <video> element:
+
+Example
+-------
+<video width="320" height="240" controls>
+  <source src="neymer.mp4" type="video/mp4">
+  <source src="neymer.mp4" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+How it Works:-
+-------------
+ 1. The controls attribute adds video controls, like play, pause, and volume.
+
+ 2. It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the     video loads.
+
+ 3. The <source> element allows you to specify alternative video files which the browser may choose from. The browser will use the     first recognized format.
+
+ 4. The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.
+
+HTML <video> Autoplay:-
+--------------------
+To start a video automatically, use the autoplay attribute:
+
+Example
+-------
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.
+
+Add muted after autoplay to let your video start playing automatically (but muted):
+
+Example:-
+--------
+<video width="320" height="240" autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+HTML Video - Media Types:-
+-------------------------
+File Format     Media Type
+-----------	---------
+ * MP4		video/mp4
+ * WebM		video/webm
+ * Ogg		video/ogg
+
+
+Tag             Description
+---	        ------------
+ * <video>	Defines a video or movie
+ * <source>	Defines multiple media resources for media elements, such as <video> and <audio>
+ * <track>	Defines text tracks in media players
+
+HTML Audio:-
+----------
+The HTML <audio> element is used to play an audio file on a web page.
+
+The HTML <audio> Element:-
+------------------------
+To play an audio file in HTML, use the <audio> element:
+
+Example
+-------
+<audio controls>
+  <source src="Thandavam Piano-music.mp3" type="audio/ogg">
+  <source src="Thandavam Piano-music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+HTML Audio - How It Works
+The controls attribute adds audio controls, like play, pause, and volume.
+
+The <source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+
+The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+
+HTML <audio> Autoplay:-
+---------------------
+To start an audio file automatically, use the autoplay attribute:
+
+Example
+-------
+<audio controls autoplay>
+  <source src="Thandavam Piano-music.mp3" type="audio/ogg">
+  <source src="Thandavam Piano-music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.
+
+Add muted after autoplay to let your audio file start playing automatically (but muted):
+
+Example
+------
+<audio controls autoplay muted>
+  <source src="Thandavam Piano-music.mp3" type="audio/ogg">
+  <source src="Thandavam Piano-music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+HTML Audio - Media Types:-
+------------------------
+File Format     Media Type
+-----------	-----------
+ * MP3		audio/mpeg
+ * OGG		audio/ogg
+ * WAV		audio/wav
+
+HTML Audio Tags:-
+---------------
+Tag    		Description
+---		-----------
+ * <audio>	Defines sound content
+ * <source>	Defines multiple media resources for media elements, such as <video> and <audio>

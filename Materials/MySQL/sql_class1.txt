@@ -1,0 +1,291 @@
+
+Dbms---
+Rdmbs--
+
+acess-12-codds rule--
+
+data type
+-----------
+
+sql---structured Query Language
+------------------------------
+char -- data type-
+
+CHAR(Size)	It is used to specify a fixed length string that can contain numbers, letters, and special characters. Its size can be 0 to 255 characters. Default is 1.
+VARCHAR(Size)	It is used to specify a variable length string that can contain numbers, letters, and special characters. Its size can be from 0 to 65535 characters.
+BINARY(Size)	It is equal to CHAR() but stores binary byte strings. Its size parameter specifies the column length in the bytes. Default is 1.
+VARBINARY(Size)	It is equal to VARCHAR() but stores binary byte strings. Its size parameter specifies the maximum column length in bytes.
+TEXT(Size)	It holds a string that can contain a maximum length of 255 characters.
+TINYTEXT	It holds a string with a maximum length of 255 characters.
+MEDIUMTEXT	It holds a string with a maximum length of 16,777,215.
+LONGTEXT	It holds a string with a maximum length of 4,294,967,295 characters.
+ENUM(val1, val2, val3,...)	It is used when a string object having only one value, chosen from a list of possible values. It contains 65535 values in an ENUM list. If you insert a value that is not in the list, a blank value will be inserted.
+SET( val1,val2,val3,....)	It is used to specify a string that can have 0 or more values, chosen from a list of possible values. You can list up to 64 values at one time in a SET list.
+BLOB(size)	It is used for BLOBs (Binary Large Objects). It can hold up to 65,535 bytes.
+MySQL Numeric Data Types
+
+integer Data types
+-------------------
+
+BIT(Size)	It is used for a bit-value type. The number of bits per value is specified in size. Its size can be 1 to 64. The default value is 1.
+INT(size)	It is used for the integer value. Its signed range varies from -2147483648 to 2147483647 and unsigned range varies from 0 to 4294967295. The size parameter specifies the max display width that is 255.
+INTEGER(size)	It is equal to INT(size).
+FLOAT(size, d)	It is used to specify a floating point number. Its size parameter specifies the total number of digits. The number of digits after the decimal point is specified by d parameter.
+FLOAT(p)	It is used to specify a floating point number. MySQL used p parameter to determine whether to use FLOAT or DOUBLE. If p is between 0 to24, the data type becomes FLOAT (). If p is from 25 to 53, the data type becomes DOUBLE().
+DOUBLE(size, d)	It is a normal size floating point number. Its size parameter specifies the total number of digits. The number of digits after the decimal is specified by d parameter.
+DECIMAL(size, d)	It is used to specify a fixed point number. Its size parameter specifies the total number of digits. The number of digits after the decimal parameter is specified by d parameter. The maximum value for the size is 65, and the default value is 10. The maximum value for d is 30, and the default value is 0.
+DEC(size, d)	It is equal to DECIMAL(size, d).
+BOOL	It is used to specify Boolean values true and false. Zero is considered as false, and nonzero values are considered as true.
+MySQL Date and Time Data Types
+
+date data type
+=============
+
+DATE	It is used to specify date format YYYY-MM-DD. Its supported range is from '1000-01-01' to '9999-12-31'.
+DATETIME(fsp)	It is used to specify date and time combination. Its format is YYYY-MM-DD hh:mm:ss. Its supported range is from '1000-01-01 00:00:00' to 9999-12-31 23:59:59'.
+TIMESTAMP(fsp)	It is used to specify the timestamp. Its value is stored as the number of seconds since the Unix epoch('1970-01-01 00:00:00' UTC). Its format is YYYY-MM-DD hh:mm:ss. Its supported range is from '1970-01-01 00:00:01' UTC to '2038-01-09 03:14:07' UTC.
+TIME(fsp)	It is used to specify the time format. Its format is hh:mm:ss. Its supported range is from '-838:59:59' to '838:59:59'
+YEAR	It is used to specify a year in four-digit format. Values allowed in four digit format from 1901 to 2155, and 0000.
+------------------------
+SQL Server Data Types
+SQL Server String Data Type
+----------------------------
+char(n)	It is a fixed width character string data type. Its size can be up to 8000 characters.
+varchar(n)	It is a variable width character string data type. Its size can be up to 8000 characters.
+varchar(max)	It is a variable width character string data types. Its size can be up to 1,073,741,824 characters.
+text	It is a variable width character string data type. Its size can be up to 2GB of text data.
+nchar	It is a fixed width Unicode string data type. Its size can be up to 4000 characters.
+nvarchar	It is a variable width Unicode string data type. Its size can be up to 4000 characters.
+ntext	It is a variable width Unicode string data type. Its size can be up to 2GB of text data.
+binary(n)	It is a fixed width Binary string data type. Its size can be up to 8000 bytes.
+varbinary	It is a variable width Binary string data type. Its size can be up to 8000 bytes.
+image	It is also a variable width Binary string data type. Its size can be up to 2GB.
+SQL Server Numeric Data Types
+
+bit	It is an integer that can be 0, 1 or null.
+tinyint	It allows whole numbers from 0 to 255.
+Smallint	It allows whole numbers between -32,768 and 32,767.
+Int	It allows whole numbers between -2,147,483,648 and 2,147,483,647.
+bigint	It allows whole numbers between -9,223,372,036,854,775,808 and 9,223,372,036,854,775,807.
+float(n)	It is used to specify floating precision number data from -1.79E+308 to 1.79E+308. The n parameter indicates whether the field should hold the 4 or 8 bytes. Default value of n is 53.
+real	It is a floating precision number data from -3.40E+38 to 3.40E+38.
+money	It is used to specify monetary data from -922,337,233,685,477.5808 to 922,337,203,685,477.5807.
+SQL Server Date and Time Data Type
+
+datetime	It is used to specify date and time combination. It supports range from January 1, 1753, to December 31, 9999 with an accuracy of 3.33 milliseconds.
+datetime2	It is used to specify date and time combination. It supports range from January 1, 0001 to December 31, 9999 with an accuracy of 100 nanoseconds
+date	It is used to store date only. It supports range from January 1, 0001 to December 31, 9999
+time	It stores time only to an accuracy of 100 nanoseconds
+timestamp	It stores a unique number when a new row gets created or modified. The time stamp value is based upon an internal clock and does not correspond to real time. Each table may contain only one-time stamp variable.
+SQL Server Other Data Types
+
+Sql_variant	It is used for various data types except for text, timestamp, and ntext. It stores up to 8000 bytes of data.
+XML	It stores XML formatted data. Maximum 2GB.
+cursor	It stores a reference to a cursor used for database operations.
+table	It stores result set for later processing.
+uniqueidentifier	It stores GUID (Globally unique identifier).
+Oracle Data Types
+Oracle String data types
+
+CHAR(size)	It is used to store character data within the predefined length. It can be stored up to 2000 bytes.
+NCHAR(size)	It is used to store national character data within the predefined length. It can be stored up to 2000 bytes.
+VARCHAR2(size)	It is used to store variable string data within the predefined length. It can be stored up to 4000 byte.
+VARCHAR(SIZE)	It is the same as VARCHAR2(size). You can also use VARCHAR(size), but it is suggested to use VARCHAR2(size)
+NVARCHAR2(size)	It is used to store Unicode string data within the predefined length. We have to must specify the size of NVARCHAR2 data type. It can be stored up to 4000 bytes.
+Oracle Numeric Data Types
+
+NUMBER(p, s)	It contains precision p and scale s. The precision p can range from 1 to 38, and the scale s can range from -84 to 127.
+FLOAT(p)	It is a subtype of the NUMBER data type. The precision p can range from 1 to 126.
+BINARY_FLOAT	It is used for binary precision( 32-bit). It requires 5 bytes, including length byte.
+BINARY_DOUBLE	It is used for double binary precision (64-bit). It requires 9 bytes, including length byte.
+Oracle Date and Time Data Types
+
+DATE	It is used to store a valid date-time format with a fixed length. Its range varies from January 1, 4712 BC to December 31, 9999 AD.
+TIMESTAMP	It is used to store the valid date in YYYY-MM-DD with time hh:mm:ss format.
+Oracle Large Object Data Types (LOB Types)
+
+BLOB	It is used to specify unstructured binary data. Its range goes up to 232-1 bytes or 4 GB.
+BFILE	It is used to store binary data in an external file. Its range goes up to 232-1 bytes or 4 GB.
+CLOB	It is used for single-byte character data. Its range goes up to 232-1 bytes or 4 GB.
+NCLOB	It is used to specify single byte or fixed length multibyte national character set (NCHAR) data. Its range is up to 232-1 bytes or 4 GB.
+RAW(size)	It is used to specify variable length raw binary data. Its range is up to 2000 bytes per row. Its maximum size must be specified.
+LONG RAW	It is used to specify variable length raw binary data. Its range up to 231-1 bytes or 2 GB, per row.
+
+operators
+------------
+SQL Arithmetic Operators
++	It is used to add containing values of both operands	a+b will give 150
+-	It subtracts right hand operand from left hand operand	a-b will give -50
+*	It multiply both operand's values	a*b will give 5000
+/	It divides left hand operand by right hand operand	b/a will give 2
+%	It divides left hand operand by right hand operand and returns reminder	b%a will give 0
+
+
+SQL Comparison Operators
+=	Examine both operands value that are equal or not,if yes condition become true.	(a=b) is not true
+!=	This is used to check the value of both operands equal or not,if not condition become true.	(a!=b) is true
+< >	Examines the operand's value equal or not, if values are not equal condition is true	(a<>b) is true
+>	Examine the left operand value is greater than right Operand, if yes condition becomes true	(a>b) is not true
+<	Examines the left operand value is less than right Operand, if yes condition becomes true	(a
+>=	Examines that the value of left operand is greater than or equal to the value of right operand or not,if yes condition become true	(a>=b) is not true
+<=	Examines that the value of left operand is less than or equal to the value of right operand or not, if yes condition becomes true	(a<=b) is true
+!<	Examines that the left operand value is not less than the right operand value	(a!
+!>	Examines that the value of left operand is not greater than the value of right operand	(a!>b) is true
+
+SQL Logical Operators
+--------------------
+ALL	this is used to compare a value to all values in another value set.
+AND	this operator allows the existence of multiple conditions in an SQL statement.
+ANY	this operator is used to compare the value in list according to the condition.
+BETWEEN	this operator is used to search for values, that are within a set of values
+IN	this operator is used to compare a value to that specified list value
+NOT	the NOT operator reverse the meaning of any logical operator
+OR	this operator is used to combine multiple conditions in SQL statements
+EXISTS	the EXISTS operator is used to search for the presence of a row in a specified table
+LIKE	this operator is used to compare a value to similar values using wildcard operator
+
+SQL CREATE Database
+------------------------
+create database database name
+
+DROP DATABASE database_name;  
+SQL RENAME Database
+
+SQL SELECT Database
+	USE DATABASE database_name;
+
+constraints
+--------------
+primary key---does not  allow duplicate values
+-----------
+in one table we can create only one pkey.
+using pk we can create foregin key i.e -- reference to another table
+
+foregin key
+unique 
+not null
+compisite
+
+
+table--emp
+-----
+empid--11  pk
+nm
+dob
+desg
+mobno--11
+emailid--11
+
+emp_att
+empid--fk emp(empid)
+
+emp_payroll
+empid--fk
+
+syntax for creating table
+---------------------------
+
+create table "tablename"  
+("column1" "data type",  
+"column2" "data type",  
+...  
+"columnN" "data type");  
+
+create table emp
+(empno varchar(20) primary key,
+ ename varchar(30),
+ dob date,
+ salary int)
+
+insert into emp
+values('1001','vijay','1990-02-02',8900)
+
+
+insert into emp(empno,ename,salary)
+values('1002','vijay ram',8900)
+
+update emp set salary=18900
+
+update emp set salary=12900  where empno='1000'
+
+delete from emp
+
+delete from emp where empno='100';
+
+SELECT empno,ename FROM emp.
+
+
+2) DROP TABLE
+3) delete table
+4) rename table
+5) alter table
+
+TRUNCATE TABLE
+insert 
+update
+SQL SELECT
+
+ddl
+---------
+CREATE – is used to create the database or its objects (like table, index, function, views, store procedure and triggers).
+DROP – is used to delete objects from the database.
+ALTER-is used to alter the structure of the database.
+TRUNCATE–is used to remove all records from a table, including all spaces allocated for the records are removed.
+COMMENT –is used to add comments to the data dictionary.
+RENAME –is used to rename an object existing in the database.
+
+dml
+--------
+INSERT – is used to insert data into a table.
+UPDATE – is used to update existing data within a table.
+DELETE – is used to delete records from a database table.
+
+dcl
+-------
+GRANT-gives user’s access privileges to the database.
+REVOKE-withdraw user’s access privileges given by using the GRANT command.
+---------
+CREATE TABLE CUSTOMERS(
+   ID   INT              NOT NULL,
+   NAME VARCHAR (20)     NOT NULL,
+   AGE  INT              NOT NULL,
+   ADDRESS  CHAR (25) ,
+   SALARY   DECIMAL (18, 2),       
+   PRIMARY KEY (ID)
+);
+
+CREATE TABLE ORDERS (
+   ID          INT        NOT NULL,
+   DATE        DATETIME, 
+   CUSTOMER_ID INT ,foregin key(CUSTOMER_ID INT)references CUSTOMERS(ID),
+   AMOUNT     double,
+   PRIMARY KEY (ID)
+);
+
+ALTER TABLE table_name ADD column_name datatype;
+ALTER TABLE table_name DROP COLUMN column_name;
+ALTER TABLE table_name MODIFY COLUMN column_name datatype;
+ALTER TABLE table_name 
+ADD CONSTRAINT MyUniqueConstraint UNIQUE(column1, column2...);
+
+insert into orders
+values(102,'2021-02-03',155,8547)
+
+FOREIGN KEY (customer_id)
+REFERENCES customer(id)
+
+9874078452
+
+create table emp4
+(empno varchar(20) PRIMARY KEY,
+ ename varchar(30),
+ dob date,
+ mobnno double UNIQUE,
+ email_id varchar(30) UNIQUE,
+ salary int)
+
+alter table emp4
+modify mobnno double (12,2)
+
+insert into emp4 
+values(120,'ravi','2020-02-03',9867834523,'ram@gmail.com')

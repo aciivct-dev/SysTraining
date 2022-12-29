@@ -1,0 +1,9 @@
+constraints  ??? conditions
+---------------------------
+primary key--does not allow the duplicate values.in table we create only one primary key.using the primary key we can create the foreign key.
+
+unique 
+not null
+null
+foregin key
+

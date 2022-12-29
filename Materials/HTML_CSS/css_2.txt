@@ -1,0 +1,454 @@
+CSS Opacity
+The CSS opacity property is used to specify the transparency of an element.
+In simple word, you can say that it specifies the clarity of the image.
+
+html>  
+<head>  
+<style>  
+img.trans {  
+    opacity: 0.4;  
+    filter: alpha(opacity=40); /* For IE8 and earlier */  
+}  
+</style>  
+</head>  
+<body>  
+<p>Normal Image</p>  
+<img src="rose.jpg" alt="normal rose">  
+<p>Transparent Image</p>  
+<img class="trans" src="rose.jpg" alt="transparent rose">  
+</body>  
+</html>  
+===========================================
+
+CSS Padding
+CSS Padding property is used to define the space between the element content and the element border.
+
+It is different from CSS margin in the way that CSS margin defines the space around elements. CSS padding is affected by the background colors. It clears an area around the content.
+
+Top, bottom, left and right padding can be changed independently using separate properties. You can also change all properties at once by using shorthand padding property.
+
+padding	It is used to set all the padding properties in one declaration.
+padding-left	It is used to set left padding of an element.
+padding-right	It is used to set right padding of an element.
+padding-top	It is used to set top padding of an element.
+padding-bottom	It is used to set bottom padding of an element.
+
+<html>  
+<head>  
+<style>  
+p {  
+    background-color: pink;  
+}  
+p.padding {  
+    padding-top: 50px;  
+    padding-right: 100px;  
+    padding-bottom: 150px;  
+    padding-left: 200px;  
+}  
+</style>  
+</head>  
+<body>  
+<p>This is a paragraph with no specified padding.</p>  
+<p class="padding">This is a paragraph with specified paddings.</p>  
+</body>  
+</html>  
+
+===================================================================
+CSS Position
+The CSS position property is used to set position for an element. it is also used to place an element behind another and also useful for scripted animation effect.
+
+You can position an element using the top, bottom, left and right properties. These properties can be used only after position property is set first. A position element's computed position property is relative, absolute, fixed or sticky.
+
+Let's have a look at following CSS positioning:
+
+CSS Static Positioning
+CSS Fixed Positioning
+CSS Relative Positioning
+CSS Absolute Positioning
+
+1) CSS Static Positioning
+This is a by default position for HTML elements. It always positions an element according to the normal flow of the page. It is not affected by the top, bottom, left and right properties.
+
+2) CSS Fixed Positioning
+The fixed positioning property helps to put the text fixed on the browser. This fixed test is positioned relative to the browser window, and doesn't move even you scroll the window.
+
+3) CSS Relative Positioning
+The relative positioning property is used to set the element relative to its normal position.
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+h2.pos_left {  
+    position: relative;  
+    left: -30px;  
+}  
+h2.pos_right {  
+    position: relative;  
+    left: 30px;  
+}  
+</style>  
+</head>  
+<body>  
+<h2>This is a heading with no position</h2>  
+<h2 class="pos_left">This heading is positioned left according to its normal position</h2>  
+<h2 class="pos_right">This heading is positioned right according to its normal position</h2>  
+<p>The style "left:-30px" subtracts 30 pixels from the element's original left position.</p>  
+<p>The style "left:30px" adds 30 pixels to the element's original left position.</p>  
+</body>  
+</html>  
+
+4) CSS Absolute Positioning
+The absolute positioning is used to position an element relative to the first parent element that has a position other than static. If no such element is found, the containing block is HTML.
+
+With the absolute positioning, you can place an element anywhere on a page.
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+h2 {  
+    position: absolute;  
+    left: 150px;  
+    top: 250px;  
+}  
+</style>  
+</head>  
+<body>  
+<h2>This heading has an absolute position</h2>  
+<p> The heading below is placed 150px from the left and 250px from the top of the page.</p>  
+</body>  
+</html>  
+
+=================================
+CSS Outline
+CSS outline is just like CSS border property. It facilitates you to draw an extra border around an element to get visual attention.
+
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.box {
+        background-color: #eee;
+        outline: 5px solid red;
+        border: 9px solid lightgreen;
+        padding: 15px 31px;
+}
+</style>
+<div class="box">Welcome to css</div>
+</body>
+</html>
+
+ 
+
+
+===================
+
+<html>  
+<style type="text/css">  
+.box {  
+        outline-color: red;  
+        outline-width: 4px;  
+        margin: 10px;  
+        float: left;  
+        border: 2px solid lightgreen;  
+        padding: 5px 10px;  
+}  
+</style>  
+<div class="box" style="outline-style: dashed;">This is dashed outline.</div>  
+<div class="box" style="outline-style: dotted;">This is dotted outline.</div>  
+<div class="box" style="outline-style: double;">This is double outline.</div>  
+<div class="box" style="outline-style: groove;">This is groove outline.</div>  
+<div class="box" style="outline-style: inset;">This is inset outline.</div>  
+<div class="box" style="outline-style: outset;">This is outset outline.</div>  
+<div class="box" style="outline-style: ridge;">This is ridge outline.</div>  
+<div class="box" style="outline-style: solid;">This is solid outline.</div>  
+</body>  
+</html>  
+
+=================================================
+<html>  
+<head>  
+<style>  
+p.pos_fixed {  
+    position: fixed;  
+    top: 50px;  
+    right: 400px;  
+    color: blue;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<p>Some text...</p><p>Some text...</p><p>Some text...</p><p>........</p><p>.... ...</p  
+><p>........</p><p>........</p><p>........</p><p>........</p>  
+<p>........ </p><p>........</p><p>........</p><p>........</p><p>........</p>  
+<p>........</p><p>........</p><p>Some text...</p><p>Some text...</p><p>Some text...</p>  
+<p class="pos_fixed">This is the fix positioned text.</p>  
+</body>  
+</html>  
+
+css display
+----------
+CSS Display
+CSS display is the most important property of CSS which is used to control the layout of the element. It specifies how the element is displayed.
+
+CSS display values
+There are following CSS display values which are commonly used.
+
+display: inline;
+display: inline-block;
+display: block;
+display: run-in;
+display: none;
+
+<html>  
+<head>  
+<style>  
+p {  
+display: block;   
+}  
+</style>  
+</head>  
+<body>  
+  
+<p>Java Tutorial.</p>  
+<p>SQL Tutorial.</p>  
+<p>HTML Tutorial.</p>  
+<p>CSS Tutorial.</p>  
+</body>  
+</html>  
+
+CSS Cursor
+It is used to define the type of mouse cursor when the mouse pointer is on the element. It allows us to specify the cursor type, which will be displayed to the user.
+
+Values	Usage
+alias	It is used to display the indication of the cursor of something that is to be created.
+auto	It is the default property in which the browser sets the cursor.
+all-scroll	It indicates the scrolling.
+col-resize	Using it, the cursor will represent that the column can be horizontally resized.
+cell	The cursor will represent that a cell or the collection of cells is selected.
+context-menu	It indicates the availability of the context menu.
+default	It indicates an arrow, which is the default cursor.
+copy	It is used to indicate that something is copied.
+crosshair	In it, the cursor changes to the crosshair or the plus sign.
+e-resize	It represents the east direction and indicates that the edge of the box is to be shifted towards right.
+ew-resize	It represents the east/west direction and indicates a bidirectional resize cursor.
+n-resize	It represents the north direction that indicates that the edge of the box is to be shifted to up.
+ne-resize	It represents the north/east direction and indicates that the edge of the box is to be shifted towards up and right.
+move	It indicates that something is to be shifted.
+help	It is in the form of a question mark or ballon, which represents that help is available.
+None	It is used to indicate that no cursor is rendered for the element.
+No-drop	It is used to represent that the dragged item cannot be dropped here.
+s-resize	It indicates an edge box is to be moved down. It indicates the south direction.
+Row-resize	It is used to indicate that the row can be vertically resized.
+Se-resize	It represents the south/east direction, which indicates that an edge box is to be moved down and right.
+Sw-resize	It represents south/west direction and indicates that an edge of the box is to be shifted towards down and left.
+Wait	It represents an hourglass.
+<url>	It indicates the source of the cursor image file.
+w-resize	It indicates the west direction and represents that the edge of the box is to be shifted left.
+Zoom-in	It is used to indicate that something can be zoomed in.
+Zoom-out	It is used to indicate that something can be zoomed out.
+
+ <body>  
+      <p>Move your mouse over the below words for the cursor change.</p>  
+      <div style = "cursor:alias">alias Value</div>        
+      <div style = "cursor:auto">auto Value</div>  
+      <div style = "cursor:all-scroll">all-scroll value</div>  
+      <div style = "cursor:col-resize">col-resize value</div>  
+      <div style = "cursor:crosshair">Crosshair</div>  
+      <div style = "cursor:default">Default value</div>  
+      <div style = "cursor:copy">copy value</div>  
+      <div style = "cursor:pointer">Pointer</div>  
+      <div style = "cursor:move">Move</div>  
+      <div style = "cursor:e-resize">e-resize</div>  
+      <div style = "cursor:ew-resize">ew-resize</div>  
+      <div style = "cursor:ne-resize">ne-resize</div>  
+      <div style = "cursor:nw-resize">nw-resize</div>  
+      <div style = "cursor:n-resize">n-resize</div>  
+      <div style = "cursor:se-resize">se-resize</div>  
+      <div style = "cursor:sw-resize">sw-resize</div>  
+      <div style = "cursor:s-resize">s-resize</div>  
+      <div style = "cursor:w-resize">w-resize</div>  
+      <div style = "cursor:text">text</div>  
+      <div style = "cursor:wait">wait</div>  
+      <div style = "cursor:help">help</div>  
+      <div style = "cursor:progress">Progress</div>  
+      <div style = "cursor:no-drop">no-drop</div>  
+      <div style = "cursor:not-allowed">not-allowed</div>  
+      <div style = "cursor:vertical-text">vertical-text</div>  
+      <div style = "cursor:zoom-in">Zoom-in</div>  
+      <div style = "cursor:zoom-out">Zoom-out</div>  
+   </body>  
+
+CSS Buttons
+In HTML, we use the button tag to create a button, but by using CSS properties, we can style the buttons. Buttons help us to create user interaction and event processing. 
+<style>
+    button {  
+           color:lightgoldenrodyellow;  
+            font-size: 30px;   
+        }   
+        .b1 {   
+            background-color: red;   
+        }   
+        .b2 {   
+            background-color: blue;   
+        }   
+        .b3 {   
+            background-color: violet;   
+        }   
+    </style>   
+ 
+<body>    
+   <h1>The background-color property.</h1>  
+    <button class="b1">Red color button</button>   
+    <button class="b2">Blue color button</button>   
+    <button class="b3">Violet color button</button>   
+</body>    
+</html>    
+
+CSS Float
+The CSS float property is a positioning property. It is used to push an element to the left or right, allowing other element to wrap around it. It is generally used with images and layouts.
+
+clear	The clear property is used to avoid elements after the floating elements which flow around it.	left, right, both, none, inherit
+float	It specifies whether the box should float or not.	left, right, none, inherit
+
+CSS Float Property Values
+Value	Description
+none	It specifies that the element is not floated, and will be displayed just where it occurs in the text. this is a default value.
+left	It is used to float the element to the left.
+right	It is used to float the element to the right.
+initial	It sets the property to its initial value.
+inherit	It is used to inherit this property from its parent element.
+
+<style>  
+img {  
+    float: right;  
+}  
+</style>  
+
+CSS hover
+The :hover selector is for selecting the elements when we move the mouse on them. It is not only limited to the links. We can use it on almost every HTML element. To style the link to unvisited pages, we can use the :link selector. To style the link for visited pages, we can use the :visited selector and to style the active links we can use the :active selector.
+
+Text overlay on image hover
+
+This CSS code displays the text on the image during mouse hover. Let's see the image overlay effect during mouse hover.
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+   body{  
+      text-align:center;  
+   }  
+* {box-sizing: border-box;}  
+  
+.container {  
+  position: relative;  
+  width: 50%;  
+  max-width: 300px;  
+}  
+  
+.image {  
+  display: block;  
+  width: 100%;  
+  height: auto;  
+}  
+  
+.overlay {  
+  position: absolute;   
+  bottom: 0;   
+  background: rgba(0, 0, 0, 0.2);   
+  width: 100%;  
+  opacity:0;   
+  transition: .9s ease;  
+  font-size: 25px;  
+  padding: 20px;  
+}  
+  
+.container:hover .overlay {  
+  opacity: 1.5;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<h1>Image Overlay Title Effect</h1>  
+<h2>Move your mouse over the image to see the effect.</h2>  
+  
+<center>  
+<div class="container">  
+      <img src="jtp.png" class="image">  
+      <div class="overlay">Welcome to phoeniix.com</div>  
+</div> </center>  
+  
+  
+</body>  
+</html>  
+
+CSS filter
+CSS filters are used to set visual effects to text, images, and other aspects of a webpage. The CSS filter property allows us to access the effects such as color or blur, shifting on the rendering of an element before the element gets displayed.
+
+Syntax
+
+filter: none | invert() | drop-shadow() | brightness() | saturate() | blur() | hue-rotate() | contrast() | opacity() | grayscale() | sepia() | url();  
+
+brightness()
+As its name implies, it is used to set the brightness of an element. If the brightness is 0%, then it represents completely black, whereas 100% brightness represents the original one. It can also accept values above 100% that provide brighter results.
+
+CSS Images
+Images are an important part of any web application. Including a lot of images in a web application is generally not recommended, but it is important to use the images wherever they required. CSS helps us to control the display of images in web applications.
+
+The styling of an image in CSS is similar to the styling of an element by using the borders and margins. There are multiple CSS properties such as border property, height property, width property, etc. that helps us to style an image.
+
+CSS Overflow
+The CSS overflow property specifies how to handle the content when it overflows its block level container.
+
+
+CSS Overflow property values
+Value	Description
+visible	It specifies that overflow is not clipped. it renders outside the element's box.this is a default value.
+hidden	It specifies that the overflow is clipped, and rest of the content will be invisible.
+scroll	It specifies that the overflow is clipped, and a scroll bar is used to see the rest of the content.
+auto	It specifies that if overflow is clipped, a scroll bar is needed to see the rest of the content.
+inherit	It inherits the property from its parent element.
+initial	It is used to set the property to its initial value.
+
+<style>  
+div.scroll {  
+    background-color: #00ffff;  
+    width: 100px;  
+    height: 100px;  
+    overflow: scroll;  
+}  
+
+<div class="scroll">You can use the overflow property when you want to have better control of the layout.  
+ The default value is visible.</div> 
+
+CSS Position
+The CSS position property is used to set position for an element. it is also used to place an element behind another and also useful for scripted animation effect.
+
+You can position an element using the top, bottom, left and right properties. These properties can be used only after position property is set first. A position element's computed position property is relative, absolute, fixed or sticky.
+
+Let's have a look at following CSS positioning:
+
+CSS Static Positioning
+CSS Fixed Positioning
+CSS Relative Positioning
+CSS Absolute Positioning
+
+<html>  
+<head>  
+<style>  
+h2 {  
+    position: absolute;  
+    left: 150px;  
+    top: 250px;  
+}  
+</style>  
+</head>  
+<body>  
+<h2>This heading has an absolute position</h2>  
+<p> The heading below is placed 150px from the left and 250px from the top of the page.</p>  
+</body>  
+</html>  

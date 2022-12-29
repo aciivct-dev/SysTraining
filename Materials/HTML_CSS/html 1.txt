@@ -1,0 +1,181 @@
+HTML5 - Overview
+
+HTML5 is the next major revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for structuring and presenting content on the World Wide Web.
+
+New Features
+HTML5 introduces a number of new elements and attributes that can help you in building modern websites. Here is a set of some of the most prominent features introduced in HTML5.
+
+New Semantic Elements − These are like <header>, <footer>, and <section>.
+
+Forms 2.0 − Improvements to HTML web forms where new attributes have been introduced for <input> tag.
+
+Persistent Local Storage − To achieve without resorting to third-party plugins.
+
+WebSocket − A next-generation bidirectional communication technology for web applications.
+
+Server-Sent Events − HTML5 introduces events which flow from web server to the web browsers and they are called Server-Sent Events (SSE).
+
+Canvas − This supports a two-dimensional drawing surface that you can program with JavaScript.
+
+Audio & Video − You can embed audio or video on your webpages without resorting to third-party plugins.
+
+Geolocation − Now visitors can choose to share their physical location with your web application.
+
+Microdata − This lets you create your own vocabularies beyond HTML5 and extend your web pages with custom semantics.
+
+Drag and drop − Drag and drop the items from one location to another location on the same webpage.
+
+The DOCTYPE
+DOCTYPEs in older versions of HTML were longer because the HTML language was SGML based and therefore required a reference to a DTD.
+
+HTML 5 authors would use simple syntax to specify DOCTYPE as follows −
+
+<!DOCTYPE html>
+The above syntax is case-insensitive.
+
+Character Encoding
+HTML 5 authors can use simple syntax to specify Character Encoding as follows −
+
+<meta charset = "UTF-8">
+The above syntax is case-insensitive.
+
+The <script> tag
+It's common practice to add a type attribute with a value of "text/javascript" to script elements as follows −
+
+<script type = "text/javascript" src = "scriptfile.js"></script> 
+HTML 5 removes extra information required and you can use simply following syntax −
+
+<script src = "scriptfile.js"></script>
+The <link> tag
+So far you were writing <link> as follows −
+
+<link rel = "stylesheet" type = "text/css" href = "stylefile.css">
+HTML 5 removes extra information required and you can simply use the following syntax −
+
+<link rel = "stylesheet" href = "stylefile.css">
+HTML5 Elements
+HTML5 elements are marked up using start tags and end tags. Tags are delimited using angle brackets with the tag name in between.
+
+The difference between start tags and end tags is that the latter includes a slash before the tag name.
+
+Following is the example of an HTML5 element −
+
+<p>...</p>
+HTML5 tag names are case insensitive and may be written in all uppercase or mixed case, although the most common convention is to stick with lowercase.
+
+Most of the elements contain some content like <p>...</p> contains a paragraph. Some elements, however, are forbidden from containing any content at all and these are known as void elements. For example, br, hr, link, meta, etc.
+
+Here is a complete list of HTML5 Elements.
+
+Tag			Description
+<!--...-->		Specifies a comment
+<!DOCTYPE>		Specifies the document type
+<a>			Specifies an anchor
+<abbr>			Specifies an abbreviation
+<address>		Specifies an address element
+<area>			Specifies an area inside an image map
+<article>	New Tag: Specifies an independent piece of content of a document, 			 such as a blog entry or newspaper article
+<aside>		New Tag: Specifies a piece of content that is only slightly related 		         to the rest of the page.
+<audio>		New Tag:Specifies an audio file.
+<base>			Specifies a base URL for all the links in a page
+<bdo>			Specifies the direction of text display
+<bgsound>		Specifies the background music
+<blink>			Specifies a text which blinks
+<blockquote>		Specifies a long quotation
+<body>			Specifies the body element
+<br>			Inserts a single line break
+<button>		Specifies a push button
+<canvas>	New Tag:This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.
+<caption>		Specifies a table caption
+<col>			Specifies attributes for table columns 
+<colgroup>		Specifies groups of table columns
+<command>	New Tag:Specifies a command the user can invoke.
+<comment>	Puts a comment in the document
+<datalist>	New Tag:Together with the a new list attribute for input can be 			used to make comboboxes
+<dd>			Specifies a definition description
+<del>			Specifies deleted text
+<details>	New Tag:Specifies additional information or controls which the user 			can obtain on demand.
+
+<div>			Specifies a section in a document
+<dl>			Specifies a definition list
+<dt>			Specifies a definition term
+<embed>		New Tag:Defines external interactive content or plugin.
+<fieldset>	Specifies a fieldset
+<figure>	New Tag:Specifies a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.
+<b>			Specifies bold text
+<i>		Specifies italic text
+<small>		Specifies small text
+<footer>	New Tag:Specifies a footer for a section and can contain 		information about the author, copyright information, et cetera.
+<form>		Specifies a form 
+<head>		Specifies information about the document
+<header>	New Tag:Specifies a group of introductory or navigational aids.
+<hgroup>	New Tag:Specifies the header of a section.
+<h1> to <h6>	Specifies header 1 to header 6
+<hr>		Specifies a horizontal rule
+<html>		Specifies an html document
+<iframe>	Specifies an inline sub window (frame)
+<ilayer>	Specifies an inline layer
+<img>		Specifies an image
+<input>		Specifies an input field
+<ins>		Specifies inserted text
+<keygen>	New Tag:Specifies control for key pair generation.
+<keygen>	Generate key information in a form
+<label>		Specifies a label for a form control
+<layer>		Specifies a layer
+<legend>	Specifies a title in a fieldset
+<li>		Specifies a list item
+<link>		Specifies a resource reference
+<map>		Specifies an image map 
+<mark>		New Tag:Specifies a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.
+<marquee>	Create a scrolling-text marquee
+<meta>		Specifies meta information
+<meter>		New Tag:Specifies a measurement, such as disk usage.
+<multicol>	Specifies a multicolumn text flow
+<nav>		New Tag:Specifies a section of the document intended for 		navigation.
+<nobr>		No breaks allowed in the enclosed text
+<noembed>	Specifies content to be presented by browsers that do not support 		the <embed>tag
+
+<noscript>	Specifies a noscript section
+<object>	Specifies an embedded object
+<ol>		Specifies an ordered list
+<optgroup>	Specifies an option group
+<option>	Specifies an option in a drop-down list
+<output>	New Tag:Specifies some type of output, such as from a calculation 		done through scripting.
+<p>		Specifies a paragraph
+<param>		Specifies a parameter for an object
+<cite>		Specifies a citation
+<code>		Specifies computer code text
+<dfn>		Specifies a definition term
+<em>		Specifies emphasized text 
+<kbd>		Specifies keyboard text
+<samp>		Specifies sample computer code
+<strong>	Specifies strong text
+<var>		Specifies a variable
+<pre>		Specifies preformatted text
+<progress>	New Tag:Specifies a completion of a task, such as downloading or when performing a series of expensive operations.
+<q>	Specifies a short quotation
+<ruby>	New Tag:Together with <rt> and <rp> allow for marking up ruby annotations.
+<script>	Specifies a script
+<section>	New Tag:Represents a generic document or application section.
+<select>	Specifies a selectable list
+<spacer>	Specifies a white space
+<span>		Specifies a section in a document
+<style>		Specifies a style definition
+<sub>		Specifies subscripted text
+<sup>		Specifies superscripted text
+<table>		Specifies a table
+<tbody>		Specifies a table body
+<td>		Specifies a table cell
+<textarea>	Specifies a text area
+<tfoot>		Specifies a table footer
+<th>		Specifies a table header
+<thead>		Specifies a table header
+<time>	New Tag:Specifies a date and/or time.
+<title>		Specifies the document title
+<tr>		Specifies a table row
+<ul>		Specifies an unordered list
+<video>	New Tag:Specifies a video file.
+<wbr>	New Tag:Specifies a line break opportunity.
+<wbr>	Indicate a potential word break point within a <nobr> section
+
+HTML5 - Attributes

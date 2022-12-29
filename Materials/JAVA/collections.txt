@@ -1,0 +1,107 @@
+The Java Collections Framework is a collection of interfaces and classes 
+which helps in storing and processing the data efficiently.
+
+collection--interface
+	set
+		hashset
+		linkedhasset
+		treeset
+			storedset-interface
+	list
+		arraylist
+		vector
+		linkedlist
+		stack
+	queue
+		linkedlist
+		priorityqueue
+	map
+		hashtable
+		linkedhashmap
+		hashmap
+		treemap
+
+Methods of Collection interface
+-----------------------------------
+There are many methods declared in the Collection interface. They are as follows:
+
+No.	Method	Description
+1	public boolean add(E e)	It is used to insert an element in this collection.
+2	public boolean addAll(Collection<? extends E> c)	It is used to insert the specified collection elements in the invoking collection.
+3	public boolean remove(Object element)	It is used to delete an element from the collection.
+4	public boolean removeAll(Collection<?> c)	It is used to delete all the elements of the specified collection from the invoking collection.
+5	default boolean removeIf(Predicate<? super E> filter)	It is used to delete all the elements of the collection that satisfy the specified predicate.
+6	public boolean retainAll(Collection<?> c)	It is used to delete all the elements of invoking collection except the specified collection.
+7	public int size()	It returns the total number of elements in the collection.
+8	public void clear()	It removes the total number of elements from the collection.
+9	public boolean contains(Object element)	It is used to search an element.
+10	public boolean containsAll(Collection<?> c)	It is used to search the specified collection in the collection.
+11	public Iterator iterator()	It returns an iterator.
+12	public Object[] toArray()	It converts collection into array.
+13	public <T> T[] toArray(T[] a)	It converts collection into array. Here, the runtime type of the returned array is that of the specified array.
+14	public boolean isEmpty()	It checks if collection is empty.
+15	default Stream<E> parallelStream()	It returns a possibly parallel Stream with the collection as its source.
+16	default Stream<E> stream()	It returns a sequential Stream with the collection as its source.
+17	default Spliterator<E> spliterator()	It generates a Spliterator over the specified elements in the collection.
+18	public boolean equals(Object element)	It matches two collections.
+19	public int hashCode()	It returns the hash code number of the collection.
+
+Iterator interface : Iterator is an interface that iterates the elements.
+It is used to traverse the list and modify the elements
+
+public boolean hasNext() – This method returns true if the iterator has more elements.
+public object next() – It returns the element and moves the cursor pointer to the next element.
+public void remove() – This method removes the last elements returned by the iterator. 
+
+List Interface
+-----------------
+A List is an ordered Collection of elements which may contain duplicates.
+It is an interface that extends the Collection interface. 
+Lists are further classified into the following:
+
+ArrayList
+LinkedList
+Vector
+stack
+
+Array list: ArrayList is the implementation of List Interface where the elements can be 
+dynamically added or removed from the list. Also, the size of the list is increased 
+dynamically if the elements are added more than the initial size.
+
+array list  is non synchrinized
+boolean add(Collection c) - Appends the specified element to the end of a list.
+void add(int index, Object element)	 Inserts the specified element at the specified position.
+void clear()	 Removes all the elements from this list.
+int lastIndexOf(Object o)Return the index in this list of the last occurrence of the specified element, or -1 if the list does not contain this element.
+Object clone()  Return a shallow copy of an ArrayList.
+Object[] toArray() Returns an array containing all the elements in the list.
+void trimToSize() Trims the capacity of this ArrayList instance to be the list’s current size.
+
+array--
+int a[]= new int[5];
+
+a[6]---arrayindexoutofboundsexception
+
+ArrayList al = new ArrayList();
+//ArrayList<String> al = new ArrayList();
+al.add(23);
+al.add(45);
+al.add("Ram");
+al.add("priya");
+al.add(45.54f);
+s.o.p(al);
+
+Vector
+-------- 
+	is a used create dynamic array.we can add or delete the itmes.it is similar to 
+arraylist.vector is a synchrinized,it contains components that can be accessed using an integer index.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+SQL - NULL Values
+-------------------
+The SQL NULL is the term used to represent a missing value.
+A NULL value in a table is a value in a field that appears to be blank.
+
+A field with a NULL value is a field with no value. 
+It is very important to understand that a NULL value is different than a zero
+ value or a field that contains spaces.
+
+SELECT  ID, NAME, AGE, ADDRESS, SALARY
+   FROM CUSTOMERS
+   WHERE SALARY IS NOT NULL;
+
+SELECT  ID, NAME, AGE, ADDRESS, SALARY
+   FROM CUSTOMERS
+   WHERE SALARY IS NULL;
+

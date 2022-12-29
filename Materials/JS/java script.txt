@@ -1,0 +1,92 @@
+JavaScript (js) is a light-weight object-oriented programming language.
+which is used by several websites for scripting the webpages. 
+It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites.
+when applied to an HTML document. 
+It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. 
+
+Features of JavaScript
+All popular web browsers support JavaScript as they provide built-in execution environments.
+JavaScript follows the syntax and structure of the C programming language. Thus, it is a structured programming language.
+JavaScript is a weakly typed language, where certain types are implicitly cast (depending on the operation).
+JavaScript is an object-oriented programming language that uses prototypes rather than using classes for inheritance.
+It is a light-weighted and interpreted language.
+It is a case-sensitive language.
+JavaScript is supportable in several operating systems including, Windows, macOS, etc.
+It provides good control to the users over the web browsers.
+
+Application of JavaScript
+---------------------------
+Client-side validation,
+Dynamic drop-down menus,
+Displaying date and time,
+Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),
+Displaying clocks etc.
+
+Places to put JavaScript code
+---------------------------------
+Between the body tag of html
+Between the head tag of html
+In .js file (external javaScript)
+
+<html>  
+<body>  
+<script type="text/javascript">  
+ alert("Hello Java Script");   
+</script>  
+</body>  
+</html>  
+
+2)<head><script></head>
+3)
+<head>  
+<script src="message.js"></script>  
+</head> 
+
+varibles
+------------
+var a =34;
+
+JavaScript primitive data types
+--------------------------------
+Data Type	Description
+----------------------------
+String	represents sequence of characters e.g. "hello"
+Number	represents numeric values e.g. 100
+Boolean	represents boolean value either false or true
+Undefined	represents undefined value
+Null	represents null i.e. no value at all
+------------------------------
+Data Type	Description
+---------------------------
+Object	represents instance through which we can access members
+Array	represents group of similar values
+RegExp	represents regular expression 
+
+JavaScript Operators
+---------------------
+Arithmetic Operators
+Comparison (Relational) Operators
+Bitwise Operators
+Logical Operators
+Assignment Operators
+Special Operators
+
+control statemets
+---------------------
+if , switch
+
+--------------
+loops
+-----
+while,do while ,for 
+
+js array
+----------
+var s =["34",34,"tet"];
+
+var s = new Array(45,"test","ram");
+
+
+js string
+-------------
+var s = "ram";
