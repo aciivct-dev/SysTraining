@@ -1,0 +1,12 @@
+console.log("test")
+console.log("test")
+console.log("test")
+setTimeout(()=>{
+console.log("Async");},5000
+)
+console.log("test")
+console.log("test")
+console.log("test")
+console.log("test")
+console.log("test")
+console.log("test")
