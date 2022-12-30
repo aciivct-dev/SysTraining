@@ -51,6 +51,8 @@ public class ApplicationController {
 			isExist.get().setAmount_req(app.getAmount_req());
 			isExist.get().setHouse_type(app.getHouse_type());
 			isExist.get().setEmployee_type(app.getEmployee_type());
+			
+			return repos.save(isExist.get());
 		}
 		return null;
 	}
