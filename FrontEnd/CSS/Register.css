@@ -1,0 +1,219 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center {
+  background-color: white;
+  width: 35%;
+  height: 95vh;
+  position: absolute;
+  margin: 1% 0% 0% 33%;
+}
+.twt {
+  margin: 0% 0% 0% 5%;
+  padding: 2% 0% 0% 0%;
+  color: white;
+  background-color: rgb(66, 174, 236);
+  width: 90%;
+  height: 7vh;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+.twt a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 0% 0% 0% 0%;
+}
+.twit {
+  padding: 0% 0% 0% 2%;
+}
+.fb {
+  margin: 1% 0% 0% 5%;
+  padding: 2% 0% 0% 0%;
+  color: white;
+  background-color: rgb(64, 94, 158);
+  width: 90%;
+  height: 7vh;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+.fb a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.face {
+  padding: 0% 0% 0% 2%;
+}
+#line1 {
+  width: 40%;
+  display: flex;
+  color: rgb(232, 236, 239);
+  margin: 8% 0% 0% 5.2%;
+}
+.or {
+  margin: -2.5% 0% 0% 47.5%;
+  padding-top: 0%;
+  font-size: 15px;
+  position: absolute;
+  color: black;
+}
+#line2 {
+  width: 40%;
+  display: flex;
+  color: rgb(232, 236, 239);
+  margin: -0.4% 0% 10% 54.3%;
+}
+.fa-solid {
+  padding: 10px;
+  background-color: rgb(232, 236, 239);
+  min-width: 50px;
+  min-height: 40px;
+  color: rgb(68, 77, 86);
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 1px solid silver;
+  font-size: 20px;
+}
+.user {
+  margin: -3% 0% 0% 5%;
+}
+.user input {
+  width: 83%;
+  height: 42px;
+  padding-left: 14px;
+  margin-left: -1%;
+  margin-top: -1%;
+  margin-bottom: 4%;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid silver;
+  padding-bottom: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px ;
+}
+.mail{
+    margin: 0% 0% 0% 5%;
+}
+.mail input{
+    width: 83%;
+    height: 42px;
+    margin-bottom: 4%;
+    margin-left: -1%;
+    padding-left: 14px;
+    margin-top: -1%;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid silver;
+    padding-bottom: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+  }
+  .job
+  {margin: 0% 0% 0% 5%;}
+  .phone
+  {
+    margin: 0% 0% 0% 5%;
+  }
+  .phone input {
+    width: 63%;
+    height: 42px;
+    margin-left: -1%;
+    margin-top: -1%;
+    margin-bottom: 4%;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid silver;
+    padding-bottom: 2px;
+    padding-left: 14px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+  }
+  .pass{
+    margin: 0% 0% 0% 5%;
+  }
+  .pass input {
+    width: 83%;
+    height: 42px;
+    margin-bottom: 4%;
+    margin-left: -1%;
+    padding-left: 14px;
+    margin-top: -1%;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid silver;
+    padding-bottom: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+  }
+  .rePass{
+    margin: 0% 0% 0% 5%;
+  }
+  .rePass input {
+    width: 83%;
+    height: 42px;
+    margin-left: -1%;
+    padding-left: 14px;
+    margin-top: -1%;
+    margin-bottom: 4%;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid silver;
+    padding-bottom: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+  }
+
+.jobb
+{
+    width: 83%;
+    height: 42px;
+    margin-left: -1%;
+    margin-top: -1%;
+    margin-bottom: 4%;
+    padding-left: 14px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid silver;
+    padding-bottom: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+}
+.sub{
+    margin: 0% 0% 0% 5%;
+  padding: 2% 0% 0% 0%;
+  color: white;
+  background-color: rgb(66, 174, 236);
+  width: 90%;
+  height: 7vh;
+  padding-left: 14px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+.sub a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+select{
+    width: 20%;
+    height: 42px;
+    margin-left: -1%;
+    margin-top: -1%;
+    margin-bottom: 4%;
+    padding-left: 14px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid silver;
+    padding-bottom: 2px;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ; */
+}

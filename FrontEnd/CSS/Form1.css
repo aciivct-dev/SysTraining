@@ -1,0 +1,47 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+#div1 {
+  height: 100%;
+  width: 100;
+  padding: 22% 20% 20% 135%;
+  border: 2px solid red;
+}
+table,
+tr,
+td {
+  padding: 10px;
+}
+table {
+  border: 1px solid black;
+}
+.t1 {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 500;
+}
+.t2 {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.divi a1 {
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+  height: 6vh;
+  margin: 35px 0px 0px 29%;
+  width: 150px;
+  font-size: 18px;
+  text-align: center;
+}

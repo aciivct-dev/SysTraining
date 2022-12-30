@@ -1,0 +1,12 @@
+const num=[1,2,3,4,5,6,7,8,9,10];
+console.log("Before Fill: "+num);
+console.log("------------------------------------------");
+num.fill(20);
+console.log("After Fill: "+num);
+console.log("------------------------------------------");
+const num1=[1,2,3,4,5,6,7,8,9,10];
+console.log("Before Fill: "+num1);
+console.log("------------------------------------------");
+// num1.fill(0,2);
+num1.fill(0,2,5);
+console.log("After Fill: "+num1);

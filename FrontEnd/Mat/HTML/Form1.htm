@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Form2.css" />
+  </head>
+  <body
+    background="https://cdn.pixabay.com/photo/2016/06/16/01/18/italy-1460295_960_720.jpg"
+  >
+    <div id="div1">
+      <table>
+        <form action="">
+          <tr>
+            <td>
+              <label for="fn">First Name</label>
+            </td>
+            <td>
+              <input
+                class="t1"
+                type="text"
+                name="fname"
+                id="fn"
+                required
+                placeholder="First Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="ln">Last name</label></td>
+            <td>
+              <input
+                class="t1"
+                type="text"
+                name="lname"
+                id="ln"
+                required
+                placeholder="Last Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date Of Birth</label></td>
+            <td>
+              <input class="t1" type="date" name="dob" id="dob" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gen">Gender</label></td>
+            <td>
+              <input class="t1" type="radio" name="gender" id="gen" /> Male
+              <input type="radio" name="gender" id="gen" /> Female
+              <input type="radio" name="gender" id="gen" /> Others
+            </td>
+          </tr>
+          <tr>
+            <td><label for="em">Email:</label></td>
+            <td>
+              <input
+                class="t1"
+                type="email"
+                name="email"
+                id="em"
+                required
+                placeholder="Email id"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Nationality</label></td>
+            <td>
+              <input
+                class="t1"
+                list="country"
+                name="country"
+                placeholder="Nationality"
+                required
+              />
+              <datalist id="country">
+                <option value="India"></option>
+                <option value="United States"></option>
+                <option value="China"></option>
+                <option value="S.Korea"></option>
+                <option value="Portugal"></option>
+                <option value="Japan"></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="ph">Contact No</label></td>
+            <td>
+              <input class="t1" type="tel" name="Contact" id="ph"
+              placeholder="Phone Number"" required>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Pass">Password</label></td>
+            <td>
+              <input
+                class="t1"
+                type="password"
+                name="Pass"
+                id="Pass"
+                placeholder="Password"
+                required
+              />
+            </td>
+          </tr>
+        </form>
+      </table>
+      <label for="bt"></label>
+
+      <div class="divi1">
+        <a href="./Navbar.htm">Register</a>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  overflow: hidden;
+  background: #ff06ff;
+  background: -webkit-linear-gradient(top right, #ff06ff, #6cfcff);
+  background: -moz-linear-gradient(top right, #ff06ff, #6cfcff);
+  background: linear-gradient(to bottom left, #ff06ff, #6cfcff);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.login {
+  background: #ff06ff;
+  background: -webkit-linear-gradient(right, #ff06ff, #6cfcff);
+  background: -moz-linear-gradient(right, #ff06ff, #6cfcff);
+  background: linear-gradient(to left, #ff06ff, #6cfcff);
+  border: 1px solid black;
+  border-radius: 20px;
+  border: none;
+}
+.center {
+  background-color: white;
+  position: absolute;
+  margin: 1% 0% 0% 35%;
+  border-radius: 3%;
+  width: 30%;
+  height: 96vh;
+}
+.center h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bolder;
+}
+.user {
+  /* border: 1px solid black; */
+  margin: 10% 8% 5% 8%;
+}
+
+.user label {
+  font-size: 13px;
+  margin-left: 2%;
+  /* border: 1px solid black; */
+}
+.user input {
+  margin: 3% 0% 0% 2%;
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.user i {
+  margin-left: 4%;
+  color: rgb(117, 117, 117);
+}
+.user hr {
+  align-items: center;
+  color: rgb(117, 117, 117);
+  margin-top: 5%;
+  width: 100%;
+}
+.pass {
+  margin: 0% 8% 2% 8%;
+  /* border: 1px solid black; */
+}
+.pass label {
+  font-size: 13px;
+  margin-left: 2%;
+}
+.pass input {
+  margin: 3% 0% 0% 2%;
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.pass i {
+  margin-left: 4%;
+  color: rgb(117, 117, 117);
+}
+.pass hr {
+  align-items: center;
+  color: rgb(117, 117, 117);
+  margin-top: 5%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.forgot {
+  font-size: 13px;
+  margin: 0% 0% 0% 65%;
+}
+.login {
+  border: none;
+  width: 70%;
+  height: 6vh;
+  border-radius: 20px;
+  margin: 8% 0% 0% 15%;
+  color: white;
+  font-weight: bold;
+}
+.signup1 {
+  font-size: 12px;
+  margin: 9% 0% 0% 38%;
+}
+img {
+  width: 37px;
+  height: 37px;
+  margin: 2% 0% 0% 1%;
+}
+.icon {
+  margin: 3% 0% 0% 33.5%;
+}
+.signup2 {
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+  margin: 15% 0% 20% 37%;
+  padding-bottom: 20%;
+}
+.signup2 a {
+  margin-bottom: -50px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 50% 0% 0% 10%;
+}
+
